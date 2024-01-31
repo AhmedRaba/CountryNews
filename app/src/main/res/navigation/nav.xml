@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/generalFragment">
+
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.example.countrynews.frags.GeneralFragment"
+        android:label="fragment_general"
+        tools:layout="@layout/fragment_general" >
+        <action
+            android:id="@+id/action_generalFragment_to_businessFragment"
+            app:destination="@id/businessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="com.example.countrynews.frags.BusinessFragment"
+        android:label="fragment_business"
+        tools:layout="@layout/fragment_business" >
+        <action
+            android:id="@+id/action_businessFragment_to_sportFragment"
+            app:destination="@id/sportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportFragment"
+        android:name="com.example.countrynews.frags.SportFragment"
+        android:label="fragment_sport"
+        tools:layout="@layout/fragment_sport" >
+        <action
+            android:id="@+id/action_sportFragment_to_technologyFragment"
+            app:destination="@id/technologyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.example.countrynews.frags.TechnologyFragment"
+        android:label="fragment_technology"
+        tools:layout="@layout/fragment_technology" />
+</navigation>
