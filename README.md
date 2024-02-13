@@ -1,4 +1,4 @@
-CountryNews is an Android application that fetches news articles from various sources based on the user's selected country. It utilizes Retrofit for API communication.
+CountryNews is an Android application that fetches news articles from News API based on the user's selected country. It utilizes Retrofit for API communication.
 
 Key functionalities:
 
